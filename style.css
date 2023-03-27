@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "font-google";
+  src: url(FONT/poppins-regular-webfont.woff);
+}
+
+html {
+  font-size: 62.5%;
+  color: #6b728e;
+}
+
+body {
+  font: inherit/1.25em "font-google";
+  font-family: "font-google";
+  background: linear-gradient(to right, #474e68, #404258 15% 70%, #474e68);
+  box-sizing: border-box;
+}
+
+/* NAVIAGATION BAR */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #50577a;
+  height: 10vh;
+}
+
+/* 1. LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  letter-spacing: 0.2em;
+  font-size: 2vw;
+  height: inherit;
+  color: #404258;
+}
+
+/* 2. Naviagtion Link */
+.nav-group-link {
+  flex-grow: 3;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 4%;
+  margin-right: 10%;
+}
+
+.nav-group-link a {
+  text-decoration: none;
+  color: #404258;
+  font-size: 1.5vw;
+}
+
+.nav-group-link li {
+  list-style: none;
+}
+
+/* 3. Login Button */
+.loginBtn {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 5%;
+  font-size: 1.5rem;
+  margin: 2.5vw;
+}
+
+.loginBtn button {
+  background-color: #6b728e;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5% 10%;
+  font-size: 1.3vw;
+  font-family: sans-serif;
+  font-weight: 550;
+  color: #404258;
+  border: none;
+}
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "teks gambar";
+  height: 100vh;
+}
+
+/* Company Description */
+.companyDescription {
+  grid-area: teks;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Main Header */
+.main-header {
+  margin-left: 7.5vw;
+}
+
+.companyDescription h2 {
+  font-size: 4.5vw;
+  line-height: 1em;
+  margin: 5vh auto 2vh;
+  color: #6b728e;
+}
+
+/* Main Caption */
+.mainCaption {
+  font-size: 1vw;
+  width: 70%;
+  margin: 0 auto 3vh;
+}
+
+/* Main Button */
+.homeButton {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0 0 3vh 7vw;
+  /* border: 1px solid red; */
+}
+
+.trial-button {
+  width: 10vw;
+  height: 3vh;
+  background-color: #6b728e;
+  border-radius: 10px;
+  padding: 2vh 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #404258;
+  font-size: 1vw;
+  /* border: 1px solid green; */
+}
+
+.view-demo-button {
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  display: flex;
+  gap: 0.4vw;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3%;
+  color: #6b728e;
+  font-size: 1.5vw;
+  text-align: left;
+  /* border: 1px solid blue; */
+}
+
+/* Company Image */
+.companyImage {
+  grid-area: gambar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageHome {
+  width: 50%;
+  height: 50%;
+  background-color: #50577a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Begin to enter some sections */
+section {
+  height: 80vh;
+  border-top: 1vh solid #6b728e;
+}
+
+.start-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.image-banefits {
+  grid-area: image;
+  height: 70%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSection {
+  background-color: #6b728e;
+  width: 80%;
+  height: 80%;
+}
+
+.caption-banefits {
+  grid-area: text;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 1.5vw;
+  align-self: center;
+  padding-left: 2vw;
+  padding-right: 1vw;
+}
+
+.caption-1,
+.caption-3,
+.caption-5 {
+  padding-left: 3vw;
+  padding-right: 1vw;
+}
+
+.caption-2,
+.caption-4 {
+  padding-left: 1vw;
+  padding-right: 2vw;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-1,
+.section-3,
+.section-5 {
+  grid-template-areas: "text image";
+}
+
+.section-2,
+.section-4 {
+  grid-template-areas: "image text";
+}
+
+/* Subscription Section */
+.subscription-section {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 5vh 0 10vh;
+}
+.subscription-text {
+  text-align: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription-text h1 {
+  font-size: 3.5vw;
+}
+
+.subscription-text p {
+  margin-top: 2vh;
+  font-size: 1.5vw;
+}
+
+.subscription-duration-option {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  width: 23vw;
+  height: 8vh;
+  background-color: #6b728e;
+  padding: 0.5vh 0.5vw;
+  border-radius: 10px;
+}
+
+.subscription-option {
+  font-size: 1.6vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3vh 0.3vw;
+  color: #404258;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.subscription-option-1 {
+  background-color: #50577a;
+}
+
+.subscription-boxes {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+  box-sizing: border-box;
+  margin-top: 5vh;
+  padding: 3% 3%;
+}
+
+.subs-box {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #50577a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #404258;
+  padding: 2% 2%;
+}
+
+.subs-title-text,
+.subs-price {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subs-title-text {
+  width: 90%;
+  height: 25%;
+}
+
+.subs-title-text h1 {
+  font-size: 3vw;
+}
+
+.subs-title-text p {
+  font-size: 1.5vw;
+}
+
+.subs-price {
+  width: 90%;
+  height: 25%;
+  font-size: 3vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subs-banefits {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  background-color: #6b728e;
+  color: #404258;
+  padding: 5% 5%;
+  border-radius: 15px;
+}
+
+.banefits-list {
+  font-size: 1.5vw;
+}
+
+.subs-banefits ul li {
+  list-style: none;
+  background-image: url(img/checklist_7.svg);
+  background-repeat: no-repeat;
+  background-position: left 15%;
+  display: flex;
+  align-items: center;
+  background-size: 1.5vw;
+  padding-left: 2vw;
+  list-style-position: inside;
+}
+
+.purchase-button {
+  width: 90%;
+  height: 18%;
+  border-radius: 15px;
+  background-color: #404258;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #6b728e;
+  font-size: 1.5vw;
+}
+
+/* FAQ */
+.faq {
+  width: 100vw;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5vh 0 10vh;
+}
+
+.faq h1 {
+  font-size: 3vw;
+}
+
+.faq-boxes {
+  width: 90%;
+  padding: 3% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+}
+
+.faqbox {
+  width: 85%;
+  padding: 2%;
+  color: #404258;
+  font-size: 1.5vw;
+  background-color: #6b728e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  border-top: 1vh solid #6b728e;
+  font-size: 1vw;
+  padding: 3% 3%;
+  gap: 2vh;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1vw;
+  justify-content: space-between;
+}
+
+.links-box ul li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.links-box ul li a {
+  color: inherit;
+}
