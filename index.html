@@ -9,25 +9,24 @@
   </head>
 
   <body>
-    <header>
+    <header class="nav-link-destination">
       <nav class="nav">
         <div class="logo">
           <h1>Anthrofax.</h1>
         </div>
 
         <div class="nav-group-link">
-          <ul class="nav-link">
-            <li><a href="">Home</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About Us</a></li>
+          <ul>
+            <li><a href="#home" class="nav-link" data-index="0">Home</a></li>
+            <li><a href="#banefits" class="nav-link" data-index="1">Banefits</a></li>
+            <li><a href="#price" class="nav-link" data-index="2">Price</a></li>
+            <li><a href="#faq" class="nav-link" data-index="3">FAQ</a></li>
           </ul>
         </div>
 
         <div class="loginBtn">
-          <button type="button">Login</button>
-          <button type="button">Sign Up</button>
+          <button class="nav-button nav-button-login" type="button">Login</button>
+          <button class="nav-button nav-button-signup" type="button">Sign Up</button>
         </div>
       </nav>
 
@@ -60,55 +59,101 @@
       </main>
     </header>
 
-    <section class="start-section"><h1>What banefit will you get?</h1></section>
+    <section class="start-section nav-link-destination"><h1>What banefit will you get?</h1></section>
 
     <section class="section section-1">
-      <div class="caption-banefits caption-1">
+      <div class="banefits-content caption-banefits caption-1" data-order="odd">
         <h2>Nikmati streaming online lebih nyaman di TV</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores illo nesciunt natus in minus, nisi modi quia molestias aliquam eaque necessitatibus eveniet ex minima rerum ratione quisquam labore nemo consectetur.</p>
       </div>
-      <div class="image-banefits">
+      <div class="banefits-content image-banefits" data-order="odd">
         <div class="imageSection image1"></div>
       </div>
     </section>
     <section class="section section-2">
-      <div class="caption-banefits caption-2">
+      <div class="banefits-content caption-banefits caption-2" data-order="even">
         <h2>Unduh konten langganan anda agar bisa diakses secara offline</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores illo nesciunt natus in minus, nisi modi quia molestias aliquam eaque necessitatibus eveniet ex minima rerum ratione quisquam labore nemo consectetur.</p>
       </div>
-      <div class="image-banefits">
+      <div class="banefits-content image-banefits" data-order="even">
         <div class="imageSection image2"></div>
       </div>
     </section>
     <section class="section section-3">
-      <div class="caption-banefits caption-3">
+      <div class="banefits-content caption-banefits caption-3" data-order="odd">
         <h2>Nikmati berbagai potongan harga langganan secara progresif</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores illo nesciunt natus in minus, nisi modi quia molestias aliquam eaque necessitatibus eveniet ex minima rerum ratione quisquam labore nemo consectetur.</p>
       </div>
-      <div class="image-banefits">
+      <div class="banefits-content image-banefits" data-order="odd">
         <div class="imageSection image3"></div>
       </div>
     </section>
     <section class="section section-4">
-      <div class="caption-banefits caption-4">
+      <div class="banefits-content caption-banefits caption-4" data-order="even">
         <h2>Dapatkan akses podcast gratis dengan berbagai figur hebat</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores illo nesciunt natus in minus, nisi modi quia molestias aliquam eaque necessitatibus eveniet ex minima rerum ratione quisquam labore nemo consectetur.</p>
       </div>
-      <div class="image-banefits">
+      <div class="banefits-content image-banefits" data-order="even">
         <div class="imageSection image4"></div>
       </div>
     </section>
     <section class="section section-5">
-      <div class="caption-banefits caption-5">
+      <div class="banefits-content caption-banefits caption-5" data-order="odd">
         <h2>Buat profil dengan pengaturan ramah untuk anak</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores illo nesciunt natus in minus, nisi modi quia molestias aliquam eaque necessitatibus eveniet ex minima rerum ratione quisquam labore nemo consectetur.</p>
       </div>
-      <div class="image-banefits">
+      <div class="banefits-content image-banefits" data-order="odd">
         <div class="imageSection image5"></div>
       </div>
     </section>
 
-    <section class="subscription-section">
+    <section class="rating-section" id="rating">
+      <div class="rating-header">
+        <h1>Apa Kata Pengguna Anthrofax?</h1>
+        <p>Anthrofax telah dinikmati para pengguna dari berbagai kalangan.</p>
+      </div>
+
+      <div class="card-ratings">
+        <div class="card-rating">
+          <!-- Profile -->
+          <img src="./IMG/profile.png" alt="" />
+          <h3>Gudang</h3>
+          <p>Mahasiswa</p>
+          <p class="desc-card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ducimus eaque ad amet delectus expedita harum natus. Provident aliquid eum odio minima dolor, maiores temporibus!</p>
+        </div>
+        <div class="card-rating">
+          <!-- Profile -->
+          <img src="./IMG/profile.png" alt="" />
+          <h3>Gudang</h3>
+          <p>Mahasiswa</p>
+          <p class="desc-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ducimus quam repellendus optio, exercitationem neque.</p>
+        </div>
+        <div class="card-rating">
+          <!-- Profile -->
+          <img src="./IMG/profile.png" alt="" />
+          <h3>Gudang</h3>
+          <p>Mahasiswa</p>
+          <p class="desc-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dolores corporis. Quis amet aliquid et fuga voluptatum reprehenderit iusto tenetur sit!</p>
+        </div>
+      </div>
+
+      <div class="btn">
+        <div class="rating-arrow">
+          <object data="IMG/left-arrow_1.svg" width="40rem" height="40rem" style="cursor: pointer"></object>
+        </div>
+
+        <div class="small-circles">
+          <div class="small-circle"></div>
+          <div class="small-circle"></div>
+        </div>
+
+        <div class="rating-arrow">
+          <object data="IMG/right-arrow_1.svg" width="40rem" height="40rem" style="cursor: pointer"></object>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription-section nav-link-destination">
       <div class="subscription-text">
         <h1>
           Choose Plan <br />
@@ -195,32 +240,92 @@
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq nav-link-destination">
       <div class="faq-boxes">
         <h1>Frequently Asked Questions</h1>
+
         <div class="faqbox faqbox-1">
-          <p>Apa itu Anthrofax?</p>
-          <object data="img/viewmore_1.svg" width="5%" height="5%"></object>
+          <div class="faq-question">
+            <p>Apa itu Anthrofax?</p>
+            <object data="img/viewmore_1.svg" width="50rem" height="50rem"></object>
+          </div>
+
+          <div class="faq-answer disappear">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, doloremque necessitatibus est maxime vitae asperiores eaque ut quam? Quos perferendis dolor aliquid doloribus praesentium facere necessitatibus dolores
+              accusantium esse? Nesciunt.
+            </p>
+          </div>
         </div>
+
         <div class="faqbox faqbox-2">
-          <p>Berapa biaya berlangganan Anthrofax?</p>
-          <object data="img/viewmore_1.svg" width="5%" height="5%"></object>
+          <div class="faq-question">
+            <p>Berapa biaya berlangganan Anthrofax?</p>
+            <object data="img/viewmore_1.svg" width="50rem" height="50rem"></object>
+          </div>
+
+          <div class="faq-answer disappear">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, doloremque necessitatibus est maxime vitae asperiores eaque ut quam? Quos perferendis dolor aliquid doloribus praesentium facere necessitatibus dolores
+              accusantium esse? Nesciunt.
+            </p>
+          </div>
         </div>
+
         <div class="faqbox faqbox-3">
-          <p>Dimana saja saya bisa mengakses Anthrofax?</p>
-          <object data="img/viewmore_1.svg" width="5%" height="5%"></object>
+          <div class="faq-question">
+            <p>Dimana saja saya bisa mengakses Anthrofax?</p>
+            <object data="img/viewmore_1.svg" width="50rem" height="50rem"></object>
+          </div>
+
+          <div class="faq-answer disappear">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, doloremque necessitatibus est maxime vitae asperiores eaque ut quam? Quos perferendis dolor aliquid doloribus praesentium facere necessitatibus dolores
+              accusantium esse? Nesciunt.
+            </p>
+          </div>
         </div>
+
         <div class="faqbox faqbox-4">
-          <p>Apakah saya bisa melakukan refund?</p>
-          <object data="img/viewmore_1.svg" width="5%" height="5%"></object>
+          <div class="faq-question">
+            <p>Apakah saya bisa melakukan refund?</p>
+            <object data="img/viewmore_1.svg" width="50rem" height="50rem"></object>
+          </div>
+
+          <div class="faq-answer disappear">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, doloremque necessitatibus est maxime vitae asperiores eaque ut quam? Quos perferendis dolor aliquid doloribus praesentium facere necessitatibus dolores
+              accusantium esse? Nesciunt.
+            </p>
+          </div>
         </div>
+
         <div class="faqbox faqbox-5">
-          <p>Konten apa saja yang tersedia di Antrofax?</p>
-          <object data="img/viewmore_1.svg" width="5%" height="5%"></object>
+          <div class="faq-question">
+            <p>Konten apa saja yang tersedia di Antrofax?</p>
+            <object data="img/viewmore_1.svg" width="50rem" height="50rem"></object>
+          </div>
+
+          <div class="faq-answer disappear">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, doloremque necessitatibus est maxime vitae asperiores eaque ut quam? Quos perferendis dolor aliquid doloribus praesentium facere necessitatibus dolores
+              accusantium esse? Nesciunt.
+            </p>
+          </div>
         </div>
+
         <div class="faqbox faqbox-6">
-          <p>Apakah Anthrofax cocok untuk anak?</p>
-          <object data="img/viewmore_1.svg" width="5%" height="5%"></object>
+          <div class="faq-question">
+            <p>Apakah Anthrofax cocok untuk anak?</p>
+            <object data="img/viewmore_1.svg" width="50rem" height="50rem"></object>
+          </div>
+
+          <div class="faq-answer disappear">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, doloremque necessitatibus est maxime vitae asperiores eaque ut quam? Quos perferendis dolor aliquid doloribus praesentium facere necessitatibus dolores
+              accusantium esse? Nesciunt.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -262,6 +367,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your Anthrofax Account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn-modal">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="modal2 hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Login to your Account</h2>
+      <form class="modal__form">
+        <label>Email Adress</label>
+        <input type="email" />
+        <label>Password</label>
+        <input type="password" />
+        <button class="btn-modal">Login &rarr;</button>
+      </form>
+    </div>
 
     <script src="script.js"></script>
   </body>
